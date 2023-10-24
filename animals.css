@@ -1,0 +1,64 @@
+#animals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .animal {
+    width: calc(33.33% - 20px); 
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #000000;
+    text-align: center;
+  }
+  
+  .animal img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+  }
+  
+  .animal h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #ffffff;
+  }
+  
+  .animal p {
+    font-size: 14px;
+    color: #c9c9c9;
+  }
+
+  #videos {
+    padding: 20px;
+    text-align: center;
+}
+
+#videos h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000000; /* Text color */
+}
+
+.video {
+    margin-bottom: 30px;
+    background-color: #DECCCC; /* Background color for each video container */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Drop shadow */
+}
+
+.video video {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #fff; /* White border around the video */
+    border-radius: 5px; /* Rounded corners for the video player */
+}
+
+.video p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #000000; /* Text color for video descriptions */
+}

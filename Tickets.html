@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coastal Creatures Cave - Tickets</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tickets.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Coastal Creatures Cave</h1>
+        <nav>
+            <ul>
+                <li><a href="Index.html">About Us</a></li>
+                <li><a href="animals.html">Animals</a></li>
+                <li><a href="tickets.html">Tickets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
+    </header>
+<main>
+    <section id="tickets">
+        <h2>Get Your Tickets</h2>
+        <p>Plan your visit and book your tickets online for an unforgettable experience.</p>
+        <div class="ticket-form">
+            <h3>Choose Ticket Type</h3>
+            <label>
+                <input type="radio" name="ticket-type" value="adult" checked> Adult (Ages 13+)
+            </label>
+            <label>
+                <input type="radio" name="ticket-type" value="child"> Child (Ages 3-12)
+            </label>
+            <label>
+                <input type="radio" name="ticket-type" value="senior"> Senior (Ages 65+)
+            </label>
+            <label>
+                <input type="radio" name="ticket-type" value="group"> Group (10+ people)
+            </label>
+            <h3>Select Date and Time</h3>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+            <h3>Number of Tickets</h3>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+            <p>Total Price: <span id="total-price">$0.00</span></p>
+            <button id="calculate-price" type="button">Calculate Price</button>
+            <button id="buy-tickets" type="button">Buy Tickets</button>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="Images/paw-solid.svg" alt="Coastal Creatures Cave Logo">
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="Index.html">About Us</a></li>
+                <li><a href="animals.html">Animals</a></li>
+                <li><a href="tickets.html">Tickets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <a href="#" class="social-icon"><img src="Images/facebook.svg" alt="Facebook"></a>
+            <a href="#" class="social-icon"><img src="Images/square-x-twitter.svg" alt="Twitter"></a>
+            <a href="#" class="social-icon"><img src="Images/instagram.svg" alt="Instagram"></a>
+        </div>
+    </div>
+    <p>&copy; 2023 Coastal Creatures Cave</p>
+</footer>
+<script src="tickets.js"></script>
+</body>
+</html>
